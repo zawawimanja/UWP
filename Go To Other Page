@@ -1,0 +1,60 @@
+0. consists of MainPage,Page1,Page2
+
+1. in app.xaml.cs
+
+ if (rootFrame.Content == null)
+            {
+                // When the navigation stack isn't restored navigate to the first page,
+                // configuring the new page by passing required information as a navigation
+                // parameter
+                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+            }
+  //change the mainpage for fistpage
+  
+  2. in MainPage
+  
+  public MainPage()
+        {
+            this.InitializeComponent();
+            MyFrame.Navigate(typeof(BlankPage1));
+        }
+  
+  //to include the page1 in mainpage 
+  //add in constructor of mainpage
+            
+   3. In Page1.xaml
+   //add click event
+     <HyperlinkButton Content="Click to go to page 2" 
+                     Click="HyperlinkButton_Click"
+                     HorizontalAlignment="Center"/>
+    
+    4. In Page1.xaml.cs
+    //move hyperlink to page2
+     private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BlankPage2), name.Text);
+        }
+        
+     5. To keep the cache 
+     //when going back to page1 the cache is there
+      public BlankPage1()
+        {
+            this.InitializeComponent();
+            //to keep the cache
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+        }
+        
+     6. Go back & forward
+     //in xaml click event
+      click=BackButton_click
+     
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (MyFrame.CanGoBack)
+            {
+                MyFrame.GoBack();
+            }
+        }
+     
+     
+                     
