@@ -1,0 +1,29 @@
+1. Margin
+<Margin="200,200,0,0" />
+
+2.Hyperlink
+< HyperlinkButton Content="Click to go to page 1"   
+                    />
+3.Alignment 
+< HorizontalAlignment="Center" />
+
+4.Click Event
+<Click="HyperlinkButton_Click"/>
+
+5. StackPanel ,Button,Frame
+ <StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="HomeButton" Content="Home" Margin="200,200,0,0"/>
+            <Button x:Name="BackButton" Content="Back" Click="BackButton_Click" Margin="200,200,0,0"/>
+
+        </StackPanel>
+        <Frame x:Name="MyFrame" />
+
+    </StackPanel>
+    
+ 6. TextBlock for Text & Name
+     <TextBlock HorizontalAlignment="Center" Text="Grreting" Margin="200,200,0,0"/>
+      <TextBlock HorizontalAlignment="Center" Name="Grreting" Margin="200,200,0,0"/>
+
+                     
