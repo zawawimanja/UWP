@@ -1,4 +1,7 @@
- <GridView ItemsSource="{x:Bind Books}" 
+//add model class
+ xmlns:data="using:ListViewExample.Model" 
+
+<GridView ItemsSource="{x:Bind Books}" 
                   IsItemClickEnabled="True" 
                   ItemClick="GridView_ItemClick"
                   ItemTemplate="{StaticResource BookDataTemplate}">
