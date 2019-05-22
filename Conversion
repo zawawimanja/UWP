@@ -1,4 +1,4 @@
 
 
 1. Create package = https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-2. package signing - add-appdevpackage.powershell
+2. package signing - add-appdevpackage.powershell -https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps?context=/windows/msix/render
