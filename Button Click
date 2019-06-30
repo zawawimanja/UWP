@@ -1,0 +1,10 @@
+<Button x:Name = ”button” Content = ”Click Me” Margin = ”20” 
+            Click = ”button_Click”/> 
+				
+
+private void button_Click(object sender, RoutedEventArgs e) {
+         if (txtbox.Text != “”) 
+            txtblock.Text = “Hello: “ + txtbox.Text; 
+         else 
+            txtblock.Text = “You have not write your name”; 
+      } 
