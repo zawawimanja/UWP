@@ -1,8 +1,37 @@
-//add model class
- xmlns:data="using:ListViewExample.Model" 
+//one way databinding -binding name 
+<Grid Background = "{ThemeResource ApplicationPageBackgroundThemeBrush}"> 
+      <StackPanel Name = "Display"> 
+         <StackPanel Orientation = "Horizontal" Margin = "50, 50, 0, 0"> 
+            <TextBlock Text = "Name: " Margin = "10" Width = "100"/> 
+            <TextBlock Margin = "10" Width = "100" Text = "{Binding Name}"/> 
+         </StackPanel>
+			
+         <StackPanel Orientation = "Horizontal" Margin = "50,0,50,0"> 
+            <TextBlock Text = "Title: " Margin = "10" Width = "100"/> 
+            <TextBlock Margin = "10" Width = "200" Text = "{Binding Title}" /> 
+         </StackPanel> 
+			
+      </StackPanel> 
+   </Grid>
 
-<GridView ItemsSource="{x:Bind Books}" 
-                  IsItemClickEnabled="True" 
-                  ItemClick="GridView_ItemClick"
-                  ItemTemplate="{StaticResource BookDataTemplate}">
-        </GridView>
+//object constructor
+public sealed partial class MainPage : Page {
+      public MainPage(){ 
+         this.InitializeComponent(); 
+         DataContext = Employee.GetEmployee(); 
+      } 
+   } 
+	
+   public class Employee {
+      public string Name { get; set; } 
+      public string Title { get; set; }  
+		
+      public static Employee GetEmployee() {
+         var emp = new Employee() {
+            Name = "Waqar Ahmed", 
+            Title = "Development Manager" 
+         }; 
+			
+         return emp; 
+      } 
+		
