@@ -1,0 +1,14 @@
+Windows.Storage.ApplicationDataContainer localSettings = 
+    Windows.Storage.ApplicationData.Current.LocalSettings;
+Windows.Storage.StorageFolder localFolder = 
+    Windows.Storage.ApplicationData.Current.LocalFolder;
+
+
+
+// Simple setting
+
+localSettings.Values["exampleSetting"] = "Hello Windows";
+
+
+// Simple setting
+Object value = localSettings.Values["exampleSetting"];
