@@ -12,3 +12,18 @@ localSettings.Values["exampleSetting"] = "Hello Windows";
 
 // Simple setting
 Object value = localSettings.Values["exampleSetting"];
+
+
+
+if (value == null)
+{
+    // No data
+}
+else
+{
+    // Access data in value
+}
+
+// Delete a simple setting
+
+localSettings.Values.Remove("exampleSetting");
