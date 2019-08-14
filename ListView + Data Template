@@ -1,0 +1,14 @@
+<ListView x:Name="ListViewChat" ItemsSource="{Binding ChatMessages, Mode=OneWay}" SelectionChanged="ListViewChat_SelectionChanged">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate x:DataType="localVm:ChatMessage">
+                                            <Grid Background="AliceBlue" HorizontalAlignment="Stretch">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+ </Grid.ColumnDefinitions>
+ <TextBlock Grid.Column="0" FontWeight="Bold" Foreground="Black" Margin="2"><Run Text="{Binding Time, Mode=OneWay}" FontWeight="SemiBold" FontStyle="Italic"></Run>:</TextBlock>
+ <TextBlock Grid.Column="1" FontWeight="Bold" Foreground="BlacK" Margin="10,0,0,0"><Run Text="{Binding Sender, Mode=OneWay}" FontWeight="Normal" FontStyle="Normal"></Run> : <Run Text="{Binding Message, Mode=OneWay}" FontWeight="Normal" FontStyle="Normal"></Run></TextBlock>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
