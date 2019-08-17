@@ -1,0 +1,9 @@
+<Page x:Class="Quickstart.MainPage" ... >
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView ItemsSource="{x:Bind ViewModel.Recordings}"
+        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Page>
+
+
+//And then bind a ListView to the ViewModel.Recordings property.
