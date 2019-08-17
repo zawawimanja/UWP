@@ -1,0 +1,5 @@
+The template that specifies the visualization of the data objects. The default is null.
+
+       <DataTemplate x:DataType="localVm:ChatMessage">
+       
+       ChatMessage is a modelclass file
