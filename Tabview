@@ -1,0 +1,34 @@
+
+
+<controls:TabView x:Name="Tabs">
+  <controls:TabViewItem Header="Home">
+    <TextBlock Padding="16">The TabView control has multiple uses.</TextBlock>
+  </controls:TabViewItem>
+  <controls:TabViewItem Header="Tab 2">
+    <TextBlock Padding="16">A 2nd Tab.</TextBlock>
+  </controls:TabViewItem>
+</controls:TabView>
+
+
+
+   <!-- Tabs -->
+                    <controls:TabViewItem Header="Chat" >
+                        <Grid Grid.Row="0" HorizontalAlignment="Stretch" BorderBrush="Blue" BorderThickness="1" Margin="5">
+                            <ScrollViewer Grid.Row="0" HorizontalAlignment="Stretch">
+                                <ListView x:Name="ListViewChat" ItemsSource="{Binding  ChatMessages, Mode=OneWay}" SelectionChanged="ListViewChat_SelectionChanged">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate x:DataType="localVm:ChatMessage">
+                                            <Grid Background="AliceBlue" HorizontalAlignment="Stretch">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Grid.Column="0" FontWeight="Bold" Foreground="Black" Margin="2"><Run Text="{Binding Time, Mode=OneWay}" FontWeight="SemiBold" FontStyle="Italic"></Run>:</TextBlock>
+                                                <TextBlock Grid.Column="1" FontWeight="Bold" Foreground="BlacK" Margin="10,0,0,0"><Run Text="{Binding Sender, Mode=OneWay}" FontWeight="Normal" FontStyle="Normal"></Run> : <Run Text="{Binding Message, Mode=OneWay}" FontWeight="Normal" FontStyle="Normal"></Run></TextBlock>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </ScrollViewer>
+                        </Grid>
+                    </controls:TabViewItem>
