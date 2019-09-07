@@ -1,0 +1,29 @@
+
+//row & column
+
+<Grid x:Name = "FormLayoutGrid" Background = "LightGray"> 
+      <Grid.ColumnDefinitions> 
+         <ColumnDefinition Width = "Auto" /> 
+         <ColumnDefinition /> 
+      </Grid.ColumnDefinitions> 
+		
+      <Grid.RowDefinitions> 
+         <RowDefinition Height = "*" /> 
+         <RowDefinition Height = "*" /> 
+         <RowDefinition Height = "*" /> 
+      </Grid.RowDefinitions> 
+		
+      <TextBlock Grid.Row = "0" Grid.Column = "0" Text = "Name" 
+         Margin = "10" HorizontalAlignment = "Left" VerticalAlignment = "Center" 
+         Width = "100"/> 
+      
+      <TextBox Grid.Row = "0" Grid.Column = "1" Margin = "10"/> 
+      <TextBlock Grid.Row = "1" Grid.Column = "0" Text = "ID" Margin = "10" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "100"/> 
+      
+      <TextBox Grid.Row = "1" Grid.Column = "1" Margin = "10"/> 
+      <TextBlock Grid.Row = "2" Grid.Column = "0" Text = "Age" Margin = "10" 
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "100"/> 
+      
+      <TextBox Grid.Row = "2" Grid.Column = "1" Margin = "10"/>
+   </Grid> 
