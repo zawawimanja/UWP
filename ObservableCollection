@@ -1,4 +1,6 @@
   public ObservableCollection<Student> stdlist = new ObservableCollection<Student>();
      
      
+     //to put all list into collection
+     
   using System.Collections.ObjectModel;
