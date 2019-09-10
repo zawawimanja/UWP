@@ -1,0 +1,15 @@
+ItemsSource="{x:Bind Booksss}" 
+//in xaml
+
+private List<Book> Books;
+//in cs
+
+   public MainPage()
+        {
+            this.InitializeComponent();
+            Books = BookManager.GetBooks();
+        }
+        
+        //bookmanager is class. 
+        //getbook is method
+        //books is a list
