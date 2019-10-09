@@ -1,0 +1,11 @@
+ItemsSource="{x:Bind Books
+
+Books is list.
+ private List<Book> Books;
+ 
+ 
+  x:DataType="data:Book"
+  
+  Book is datamodel
+ 
+ 
