@@ -1,0 +1,6 @@
+
+
+
+   MyFrame.Navigate(typeof(Financial));
+   
+   Financial is new file.
