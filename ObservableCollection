@@ -13,6 +13,22 @@
             dataList.Add(c2);
             dataList.Add(c3);
             MyList.ItemsSource = dataList;
+            
+            //xaml
+        <ListView x:Name="MyList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Brand}"></TextBlock>
+                            <TextBlock Text="{Binding Model}"></TextBlock>
+                            <TextBlock Text="{Binding Color}"></TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
   
   
   
