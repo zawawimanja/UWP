@@ -3,3 +3,17 @@ The template that specifies the visualization of the data objects. The default i
        <DataTemplate x:DataType="localVm:ChatMessage">
        
        ChatMessage is a modelclass file
+       
+       
+       
+       <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:Contact">
+                    <local:ContactTemplate 
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Stretch" />
+                </DataTemplate>
+            </GridView.ItemTemplate>
+       
+       
+       xmlns:data="using:UserControlDataTemplate.Models"
+       
