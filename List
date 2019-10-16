@@ -51,5 +51,31 @@
         }
     }
     
+    --------------------------------------------------------------------------------------------
+    
+      private List<Icon> Icons;
+
+        private ObservableCollection<Contact> Contacts;
+
+        public MainPage()
+        {
+            this.InitializeComponent();
+
+            Icons = new List<Icon>();
+            Icons.Add(new Icon { IconPath = "Assets/male-01.png" });
+            Icons.Add(new Icon { IconPath = "Assets/male-02.png" });
+            Icons.Add(new Icon { IconPath = "Assets/male-03.png" });
+            Icons.Add(new Icon { IconPath = "Assets/female-01.png" });
+            Icons.Add(new Icon { IconPath = "Assets/female-02.png" });
+            Icons.Add(new Icon { IconPath = "Assets/female-03.png" });
+
+           
+            Contacts = new ObservableCollection<Contact>();
+        }
+        
+       --------------------------------------------------------------------------
+       
+       
+    
     
     
