@@ -1,0 +1,14 @@
+
+
+ Person person = new Person { Name = "Salman", Age = 26 };
+        Person person1 = new Person { Name = "Salman", Age = 26 };
+
+   
+
+
+        public MainPage()
+        {
+            this.InitializeComponent();
+           this.DataContext = person;
+        
+        }
