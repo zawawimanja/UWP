@@ -1,0 +1,1 @@
+   <Image Width="150" Source="{x:Bind CoverImage}" />
