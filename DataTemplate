@@ -1,11 +1,8 @@
-The template that specifies the visualization of the data objects. The default is null.
+The template that specifies the visualization of the data objects. The default is null. 
+Using Listview,Gridview contains datatemplate
 
-       <DataTemplate x:DataType="localVm:ChatMessage">
        
-       ChatMessage is a modelclass file
-       
-       
-       
+      
        <GridView.ItemTemplate>
                 <DataTemplate x:DataType="data:Contact">
                     <local:ContactTemplate 
@@ -15,5 +12,5 @@ The template that specifies the visualization of the data objects. The default i
             </GridView.ItemTemplate>
        
        
-       xmlns:data="using:UserControlDataTemplate.Models"
+       xmlns:data="using:UserControlDataTemplate.Models" - Models  is folder and inside it Contact file
        
