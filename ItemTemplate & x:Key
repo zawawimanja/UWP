@@ -1,0 +1,22 @@
+
+
+  <ListView ItemsSource="{x:Bind Books}" 
+                  ItemClick="ListView_ItemClick" 
+                  IsItemClickEnabled="True" 
+                  ItemTemplate="{StaticResource BookListDataTemplate}">
+            
+        </ListView>
+        
+        //is refer to data template
+        
+        
+        <DataTemplate x:Key="BookListDataTemplate" x:DataType="data:Book">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Image Name="image" Source="{x:Bind CoverImage}" HorizontalAlignment="Center" Width="150" />
+                <StackPanel Margin="20,20,0,0">
+                    <TextBlock Text="{x:Bind Title}" HorizontalAlignment="Left" FontSize="16" />
+                    <TextBlock Text="{x:Bind Author}" HorizontalAlignment="Left" FontSize="10" />
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+        
