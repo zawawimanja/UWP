@@ -1,0 +1,32 @@
+a)
+
+if listview contain 
+
+x:Name="MyList" then
+MyList.ItemsSource = Employee.GetEmployees();
+.GetEmployees() is object observable.
+
+0r 
+
+MyList.ItemsSource = stdlist;
+stdlist is object observable 
+
+b)
+
+if listview contain 
+
+x:Name="MyList" then
+ GetEmployees();
+.GetEmployees() is method that contain object observable .
+
+c)
+
+  Books is list =  private List<Book> Books;
+  so GetBooks() also need to convert to list  public static List<Book> GetBooks()
+  but this is not using observable meethod
+ 
+   Books = BookManager.GetBooks();
+   
+   
+   d)
+   
