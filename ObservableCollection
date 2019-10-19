@@ -105,6 +105,57 @@ public ObservableCollection<Student> stdlist = new ObservableCollection<Student>
         
            in cs file
            ItemsSource = MonkeyDataModel.All;
+           
+           
+           -----------------------------------------------------------------------------------------------------------
+           
+             public MainPage()
+        {
+            this.InitializeComponent();
+           PopulateData();
+
+  
+
+       
+        }
+
+        public ObservableCollection<Student> stdlist = new ObservableCollection<Student>();
+        public void PopulateData()
+        {
+            stdlist.Add(new Student
+            {
+                id = 1,
+                Name = "Ahmed",
+                RollNo = "100-BSCS-15",
+                Class = "FreshMan",
+                ImagePath = "Assets\\StoreLogo.png"
+            });
+            stdlist.Add(new Student
+            {
+                id = 2,
+                Name = "Anthony",
+                RollNo = "21-BSCS-14",
+                Class = "Sophomore",
+                ImagePath = "Assets\\StoreLogo.png"
+            });
+            stdlist.Add(new Student
+            {
+                id = 3,
+                Name = "David",
+                RollNo = "72-PHY-13",
+                Class = "Junior",
+                ImagePath = "Assets\\StoreLogo.png"
+            });
+            stdlist.Add(new Student
+            {
+                id = 4,
+                Name = "Umer",
+                RollNo = "125-BSEE-12",
+                Class = "Senior",
+                ImagePath = "Assets\\StoreLogo.png"
+            });
+            list_students.ItemsSource = stdlist;
+        }
         
         
   
