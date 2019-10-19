@@ -29,4 +29,13 @@ c)
    
    
    d)
+       GeEmployee is normal method. Not contain list or object observable
+       DataContext = Employee.GetEmployee(); 
+       
+       OR
+       
+       Person person= new Person() is oobject
+       this.DataContext = person;
+   
+
    
