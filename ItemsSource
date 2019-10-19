@@ -1,5 +1,5 @@
 ItemsSource="{x:Bind Booksss}" 
-//in xaml
+//in xaml refer to list in cs
 
 private List<Book> Books;
 //in cs
