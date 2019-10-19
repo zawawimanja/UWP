@@ -1,4 +1,12 @@
-a)
+
+
+
+a) Using this is good because it is static
+
+  public static ObservableCollection<Employee> GetEmployees(){
+  var employees = new ObservableCollection<Employee>();
+  }
+            
 
 if listview contain 
 
@@ -7,6 +15,8 @@ MyList.ItemsSource = Employee.GetEmployees();
 .GetEmployees() is object observable.
 
 0r 
+
+public ObservableCollection<Student> stdlist = new ObservableCollection<Student>();
 
 MyList.ItemsSource = stdlist;
 stdlist is object observable 
@@ -21,6 +31,9 @@ x:Name="MyList" then
 
 c)
 
+ public static List<Book> GetBooks()
+
+
   Books is list =  private List<Book> Books;
   so GetBooks() also need to convert to list  public static List<Book> GetBooks()
   but this is not using observable meethod
@@ -28,7 +41,9 @@ c)
    Books = BookManager.GetBooks();
    
    
-   d)
+  d)
+      public static Employee GetEmployee()
+   
        GeEmployee is normal method. Not contain list or object observable
        DataContext = Employee.GetEmployee(); 
        
